@@ -1,0 +1,38 @@
+git init
+git add .
+#create .gitignore file , exclude(/dir »»ÐÐ£¬file.txt) 
+#if had commit ------> git reset --hard 0d1d7fc32 git rm -r --cached bin_dir
+git commit -m "First commit"
+
+#go to github ,create repo ,then At the top of your GitHub repository's Quick Setup page, click  to copy the remote repository URL.
+
+git remote add origin remote repository URL
+
+git remote -v 
+
+# "origin" is the local name of the remote repository
+#git remote rm origin To remove a remote repository you enter:git remote rm origin
+#master is branch name
+git push origin master
+
+
+#work with proxy
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+
+#reset to without proxy
+git config --global --unset http.proxy
+
+#check the currrently set proxy
+git config --global --get http.proxy
+
+
+add http proxy ---->  git config --global http.proxy http://proxyuser:proxy_user@proxy_server:port
+
+git config --global http.proxy 'socks5://127.0.0.1:1080' 
+
+add socks proxy ----> git config --global https.proxy 'socks5://proxy_server:port'
+
+#update
+git pull the_local_name_of_the_remote_repository remote_branch
+
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
