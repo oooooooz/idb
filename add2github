@@ -43,3 +43,10 @@ git rm --cached mylogfile.log
 git rm --cached -r mydirectory
 
 #commit without add pre
+
+
+#add ssh
+
+-> type ssh-keygen ,copy the pub key to Github setting
+-> window bash,start ssh-agent:eval $(ssh-agent -s),add ssh private key to ssh-agent:ssh-add /F/dir/private-key-file
+-> test ,ssh -T git@github.com
