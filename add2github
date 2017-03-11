@@ -36,3 +36,10 @@ add socks proxy ----> git config --global https.proxy 'socks5://proxy_server:por
 git pull the_local_name_of_the_remote_repository remote_branch
 
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+#remove rp not local
+git rm --cached mylogfile.log 
+
+git rm --cached -r mydirectory
+
+#commit without add pre
